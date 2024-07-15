@@ -1,20 +1,45 @@
 :root {
-    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  
-  /* Set body’s font-family to font-family-base */
-  body {
-    font-family: var(--font-family-base);
-  }
-  
-  /* Targeting all 6 levels of section headings */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-  }
-  
-  /* Existing styles */
-  .links {
-    /* Other styles for links */
-  }
-  
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+}
+
+/* Section headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Anchor elements styling */
+a {
+  color: var(--text-color);
+}
+
+/* Visually hidden class styling */
+.visually-hidden {
+  display: none;
+}
+
+/* Card category class styling */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Section tagline class styling */
+.section-tagline {
+  color: var(--color-primary);
+}
