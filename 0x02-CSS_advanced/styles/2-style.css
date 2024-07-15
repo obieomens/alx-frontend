@@ -1,0 +1,29 @@
+/* Smooth scrolling for the HTML element */
+html {
+  scroll-behavior: smooth;
+}
+/* Body styling */
+body {
+    color: #161616;
+  }
+  
+  /* Anchor elements styling */
+  a {
+    color: #161616;
+  }
+  
+  /* Visually hidden class styling */
+  .visually-hidden {
+    display: none;
+  }
+  
+  /* Card category class styling */
+  .card-category {
+    color: #D73953;
+  }
+  
+  /* Section tagline class styling */
+  .section-tagline {
+    color: #D73953;
+  }
+  
