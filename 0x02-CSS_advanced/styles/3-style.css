@@ -1,0 +1,170 @@
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+  }
+  
+  /* Resetting colors for section-tagline and card-category */
+  .section-tagline,
+  .card-category {
+    color: var(--color-primary);
+  }
+  
+  /* Resetting colors for body and anchor elements */
+  body,
+  a {
+    color: var(--text-color);
+  }
+  
+  /* Other existing styles */
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: var(--font-size-medium);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: var(--color-dark-grey);
+  }
+  
+  .header-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    color: var(--color-white);
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-size-medium);
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-x-large);
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-black);
+  }
+  
+  .section-tagline {
+    font-size: var(--font-size-large);
+    margin-top: 10px;
+  }
+  
+  .section-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col-1-3 {
+    width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .card-services,
+  .card-work,
+  .card-blog,
+  .card-testimonial {
+    background-color: var(--color-white);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    font-size: var(--font-size-large);
+    color: var(--color-dark-grey);
+    margin: 0 0 10px;
+  }
+  
+  .card-category {
+    font-size: var(--font-size-medium);
+    color: var(--color-primary);
+    margin-bottom: 10px;
+  }
+  
+  .card-quote {
+    font-size: var(--font-size-medium);
+    color: var(--color-dark-grey);
+    margin: 0;
+  }
+  
+  .button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 20px;
+    font-size: var(--font-size-medium);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .footer {
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    padding: 40px 0;
+  }
+  
+  .footer-address {
+    font-size: var(--font-size-medium);
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-nav-item {
+    margin-left: 20px;
+  }
+  
+  .footer-nav-link {
+    color: var(--color-white);
+    font-size: var(--font-size-medium);
+  }
+  
