@@ -1,0 +1,207 @@
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2; /* Custom line heights */
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center; /* Custom property for section header alignment */
+    --section-tagline-transform: uppercase; /* Custom property for text transformation */
+    --section-title-margin: 0; /* Custom property for section title margin */
+    --section-title-color: var(--color-black); /* Custom property for section title color */
+    --section-padding: 5rem 0; /* Custom property for section padding */
+    --section-header-padding: 0 0 3rem; /* Custom property for section header padding */
+    --section-body-padding: 0 0 3rem; /* Custom property for section body padding */
+    --section-footer-padding: 3rem 0 0; /* Custom property for section footer padding */
+    --section-footer-align: center; /* Custom property for section footer alignment */
+    --footer-padding: 5rem 0 1rem; /* Custom property for footer padding */
+    --nav-item-font-family: var(--font-family-title); /* Custom property for nav item font family */
+    --nav-item-font-weight: var(--font-weight-bold); /* Custom property for nav item font weight */
+    --nav-item-font-size: var(--font-size-medium); /* Custom property for nav item font size */
+    --nav-item-letter-spacing: 0.4rem; /* Custom property for nav item letter spacing */
+    --nav-item-display: inline-block; /* Custom property for nav item display */
+    --nav-item-margin: 4.8rem 0 0 0; /* Custom property for nav item margin */
+    --nav-item-link-hover: var(--color-primary); /* Custom property for nav item link hover */
+    --section-tagline-margin: 0; /* Custom property for section tagline margin */
+  }
+  
+  /* Universal box sizing rule */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 62.5% of normal size */
+  }
+  
+  /* Body styling */
+  body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base); /* Minimum height of line boxes */
+  }
+  
+  /* Section class styling */
+  .section {
+    padding: var(--section-padding); /* Set padding for the section */
+  }
+  
+  /* Section header class styling */
+  .section-header {
+    text-align: var(--section-header-align); /* Horizontal alignment */
+    padding: var(--section-header-padding); /* Set padding for section header */
+  }
+  
+  /* Section title class styling */
+  .section-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+  }
+  
+  /* Section body class styling */
+  .section-body {
+    padding: var(--section-body-padding); /* Set padding for section body */
+  }
+  
+  /* Section footer class styling */
+  .section-footer {
+    padding: var(--section-footer-padding); /* Set padding for section footer */
+    text-align: var(--section-footer-align); /* Set horizontal alignment for section footer */
+  }
+  
+  /* Anchor elements styling */
+  a[href] { /* Target anchor elements with a hyperlink */
+    color: var(--text-color);
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a[href]:visited { /* Styling for visited links */
+    color: var(--text-color);
+    font-style: italic; /* Italicize text */
+  }
+  
+  a[href]:hover { /* Styling for hover state */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  a[href]:active { /* Styling for active state */
+    background-color: var(--color-light-grey); /* Set background color */
+  }
+  
+  /* Visually hidden class styling */
+  .visually-hidden {
+    display: none;
+  }
+  
+  /* Card category class styling */
+  .card-category {
+    color: var(--color-primary);
+  }
+  
+  /* Section tagline class styling */
+  .section-tagline {
+    font-family: var(--font-family-title); /* Set font family */
+    text-transform: var(--section-tagline-transform); /* Transform text */
+    font-weight: var(--font-weight-bold); /* Set font weight */
+    color: var(--color-primary);
+    margin: var(--section-tagline-margin); /* Set margin */
+  }
+  
+  /* Container class styling */
+  .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Navbar menu class styling */
+  .navbar-menu {
+    float: right;
+  }
+  
+  /* Nav class styling */
+  .nav {
+    margin: 0; /* Set margin for nav */
+    padding: 0; /* Set padding for nav */
+    list-style: none; /* Remove list styling */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Nav item class styling */
+  .nav .nav-item {
+    font-family: var(--nav-item-font-family); /* Set font family */
+    font-weight: var(--nav-item-font-weight); /* Set font weight */
+    font-size: var(--nav-item-font-size); /* Set font size */
+    letter-spacing: var(--nav-item-letter-spacing); /* Set letter spacing */
+    display: var(--nav-item-display); /* Set display */
+    margin: var(--nav-item-margin); /* Set margin */
+  }
+  
+  /* Nav link class styling */
+  .nav .nav-link {
+    display: block; /* Set display */
+    padding: 0.8rem 1.6rem; /* Set padding */
+  }
+  
+  .nav .nav-link:hover { /* Styling for hover state */
+    color: var(--nav-item-link-hover); /* Set foreground color */
+  }
+  
+  /* Footer class styling */
+  .footer {
+    padding: var(--footer-padding); /* Set padding for footer */
+  }
+  
+  /* UL row class styling */
+  ul.row {
+    margin: 0; /* Set margin to 0 */
+    padding: 0; /* Set padding to 0 */
+    list-style: none; /* Remove default list styles */
+  }
+  
+  /* Column 1/3 class styling */
+  .col-1-3 {
+    width: 33.33%; /* Set width */
+    float: left; /* Float to the left */
+    padding: 0.8rem; /* Set padding */
+  }
+  
+  /* Column 1/2 class styling */
+  .col-1-2 {
+    width: 50%; /* Set width */
+    float: left; /* Float to the left */
+    padding: 0.8rem; /* Set padding */
+  }
+  
+  /* Footer copyright class styling */
+  .footer-copyright {
+    margin: 0; /* Set margin */
+    font-size: var(--font-size-small); /* Set font size */
+    color: var(--text-color); /* Set text color */
+  }
+  
+  /* UL tags in footer class styling */
+  .footer ul {
+    text-align: right; /* Align text to the right */
+  }
+  
