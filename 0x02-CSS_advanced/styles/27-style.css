@@ -1,0 +1,12 @@
+/* Section hero class styling */
+.section-hero {
+    background-size: 90rem auto; /* 2-value syntax: width 90rem, height auto */
+  }
+  
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+  
+  .section-hero .section-inner {
+  }
+  
